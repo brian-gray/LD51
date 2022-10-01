@@ -4,6 +4,9 @@ using System;
 public class Solar : Area2D
 {
 
+	[Signal]
+	public delegate void FuelUp();
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -18,6 +21,11 @@ public class Solar : Area2D
 
 	private void _on_Solar_area_entered(object area)
 	{
-		// Replace with function body.
+		//f (area == "Ship"))
+		//{
+			QueueFree();
+			//Hide();
+			EmitSignal(nameof(FuelUp));	
+		//}
 	}
 }
