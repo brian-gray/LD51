@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://SolarSystem.cs" type="Script" id=1]
+[ext_resource path="res://Snocket.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Solar.tscn" type="PackedScene" id=3]
+
+[node name="SolarSystem" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Snocket" parent="." instance=ExtResource( 2 )]
+
+[node name="Solar" parent="." instance=ExtResource( 3 )]
+
+[node name="Score" type="Label" parent="."]
+margin_left = 394.0
+margin_top = 549.0
+margin_right = 445.0
+margin_bottom = 563.0
+custom_colors/font_color = Color( 0, 0.784314, 0, 1 )
+text = "Score: 0"
+
+[node name="Speed" type="Label" parent="."]
+margin_left = 544.0
+margin_top = 547.0
+margin_right = 599.0
+margin_bottom = 561.0
+custom_colors/font_color = Color( 0, 0.784314, 0, 1 )
+text = "Speed: 0"
+
+[node name="Warp" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 434.0
+margin_top = 503.0
+margin_right = 491.0
+margin_bottom = 517.0
+custom_colors/font_color = Color( 0, 0.784314, 0, 1 )
+text = "Warp in: "
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
