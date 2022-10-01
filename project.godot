@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="ld51"
-run/main_scene="res://Snocket.tscn"
+run/main_scene="res://SolarSystem.tscn"
 config/icon="res://icon.png"
 
 [editor]
