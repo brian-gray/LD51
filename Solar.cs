@@ -24,7 +24,7 @@ public class Solar : Area2D
 		//f (area == "Ship"))
 		//{
 			QueueFree();
-			//Hide();
+			Hide();
 			EmitSignal(nameof(FuelUp));	
 		//}
 	}
